@@ -2,6 +2,8 @@ body{
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
+    margin:0;
+    height: 100vh;
 
 }
 
@@ -10,6 +12,7 @@ header{
     color: white;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 ul{
@@ -27,15 +30,14 @@ a{
 .header-lower-half{
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    justify-content: center;
 }
 
 
 .header-upper-half{
     color: #F9FAF8;
-    margin: 10px;
+    justify-content: space-around;
 }
 
 .logo{
@@ -45,38 +47,41 @@ a{
 .header-links{
     display: flex;
     flex-direction: row;
-    margin-right: 80px;
+    margin-right: 60px;
     gap: 16px;
 }
 
 .header-lower-half{
     flex-direction: row;
-    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 }
 
 
 .header-lower-half-left-side{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-shrink: 0.2;
+
 }
 
-.header_lower-half{
-    background-color: white;
-}
 
-.header-sign-up-button{
+.sign-up-button{
     display: flex;
     border-radius: 6px;
     border: 1px solid;
     background-color: royalblue;
     cursor: pointer;
-    margin-left: 16px;
     margin-top: 16px;
     align-items: center;
     justify-content: center;
     flex-shrink: 1;
     height:32px;
     width:64px;
+    margin-bottom: 16px;
 }
 
 
@@ -89,10 +94,29 @@ a{
 .middle-container{
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+}
+
+.middle-container *{
+    flex-grow: 1;
+}
+
+.middle-icons-and-title{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 36px;
+    color: #1F2937;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+
 }
 
 .middle-container-icons{
+    font-weight: 0;
+    font-size: 16px;
     display: flex;
     justify-content: center;
     gap:52px;
@@ -100,26 +124,53 @@ a{
 
 .status-effect-icon{
     max-width: 200px;
+    margin: 15px;
 }
+.status-effect-title{
+    justify-content: space-evenly;
+}
+
 .status-effect-text{
     justify-self: center;
     align-self: center;
+    font-weight: 400;
 }
-
-
 
 .status-effects-icons-list{
 
 }
 
-.middle-container-lore-blurb{
+.middle-container-explanatory-text{
     background-color: #E5E7EB;
+    font-weight: 0;
+    font-size: 26px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 16px;
 }
 
 
+.middle-container-call-to-action-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 16px;
+}
+
+.middle-container-call-to-action-blue-box{
+    flex-direction: column;
+    background-color: royalblue;
+    border-radius: 10px;
+    padding: 8px;
+    flex-grow: 0.1;
+}
+
 footer{
     display: flex;
-
-
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    color: white;
 
 }
