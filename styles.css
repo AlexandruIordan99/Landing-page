@@ -1,0 +1,125 @@
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.header-upper-half,
+.header-lower-half{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
+.header-upper-half{
+    color: #F9FAF8;
+    margin: 10px;
+}
+
+.logo{
+    font-size: 24px;
+}
+
+.header-links{
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+    gap: 16px;
+}
+
+.header-lower-half{
+    flex-direction: row;
+    margin: 10px;
+}
+
+
+.header-lower-half-left-side{
+    display: flex;
+    flex-direction: column;
+}
+
+.header_lower-half{
+    background-color: white;
+}
+
+.header-sign-up-button{
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid;
+    background-color: royalblue;
+    cursor: pointer;
+    margin-left: 16px;
+    margin-top: 16px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    height:32px;
+    width:64px;
+}
+
+
+.sword{
+    display: flex;
+    width: 50%;
+    height: 50%;
+}
+
+.middle-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.middle-container-icons{
+    display: flex;
+    justify-content: center;
+    gap:52px;
+}
+
+.status-effect-icon{
+    max-width: 200px;
+}
+.status-effect-text{
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+.status-effects-icons-list{
+
+}
+
+.middle-container-lore-blurb{
+    background-color: #E5E7EB;
+}
+
+
+footer{
+    display: flex;
+
+
+
+}
